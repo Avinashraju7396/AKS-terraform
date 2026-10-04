@@ -5,7 +5,7 @@ resource "azurerm_public_ip" "vm_pip" {
   allocation_method   = "Static"
   sku                 = "Standard"
 }
-
+ 
 resource "azurerm_network_security_group" "vm_nsg" {
   name                = "aks-admin-nsg"
   location            = azurerm_resource_group.aks_rg.location
